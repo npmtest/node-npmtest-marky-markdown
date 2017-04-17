@@ -1,7 +1,7 @@
-# test coverage for  [marky-markdown (v9.0.2)](https://github.com/npm/marky-markdown)  [![npm package](https://img.shields.io/npm/v/npmtest-marky-markdown.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-marky-markdown) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-marky-markdown.svg)](https://travis-ci.org/npmtest/node-npmtest-marky-markdown)
+# test coverage for  [marky-markdown (v9.0.3)](https://github.com/npm/marky-markdown)  [![npm package](https://img.shields.io/npm/v/npmtest-marky-markdown.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-marky-markdown) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-marky-markdown.svg)](https://travis-ci.org/npmtest/node-npmtest-marky-markdown)
 #### npm's markdown parser
 
-[![NPM](https://nodei.co/npm/marky-markdown.png?downloads=true)](https://www.npmjs.com/package/marky-markdown)
+[![NPM](https://nodei.co/npm/marky-markdown.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/marky-markdown)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-marky-markdown/tree/alpha)|
 |--:|:--|
@@ -9,11 +9,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-marky-markdown/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-marky-markdown/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-marky-markdown/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-marky-markdown/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-marky-markdown/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-marky-markdown/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-marky-markdown/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-marky-markdown/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-marky-markdown/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-marky-markdown%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-marky-markdown/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-marky-markdown/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-marky-markdown/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-marky-markdown/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-marky-markdown%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-marky-markdown/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-marky-markdown/build/test-report.html](https://npmtest.github.io/node-npmtest-marky-markdown/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-marky-markdown/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-marky-markdown/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-marky-markdown/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-marky-markdown/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-marky-markdown/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-marky-markdown/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-marky-markdown/build/screenCapture.npmPackageListing.svg)
 
@@ -28,7 +34,6 @@
 {
     "author": {
         "name": "Ashley Williams",
-        "email": "ashley@npmjs.com",
         "url": "http://ashleygwilliams.github.io/"
     },
     "bin": {
@@ -75,15 +80,14 @@
         "glob": "^7.1.1",
         "intercept-stdout": "^0.1.2",
         "mocha": "^3.1.2",
-        "standard": "^8.4.0",
-        "standard-format": "^2.1.0"
+        "standard": "^8.6.0"
     },
     "directories": {},
     "dist": {
-        "shasum": "cd3f20812992a5d6b440abe160bfca0f760b3ed0",
-        "tarball": "https://registry.npmjs.org/marky-markdown/-/marky-markdown-9.0.2.tgz"
+        "shasum": "476c7197bc8942aaf7f4821f99ecdc153c941c20",
+        "tarball": "https://registry.npmjs.org/marky-markdown/-/marky-markdown-9.0.3.tgz"
     },
-    "gitHead": "fce972776b677ec7a6cb0bdc2f3054b0d89d328b",
+    "gitHead": "7d1ae685fa6f276c6afdf36e71409216d292ed4e",
     "homepage": "https://github.com/npm/marky-markdown",
     "keywords": [
         "readme",
@@ -99,29 +103,23 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "ag_dubs",
-            "email": "ashley666ashley@gmail.com"
+            "name": "ag_dubs"
         },
         {
-            "name": "bcoe",
-            "email": "ben@npmjs.com"
+            "name": "bcoe"
         },
         {
-            "name": "revin",
-            "email": "rg@sevenite.com"
+            "name": "revin"
         },
         {
-            "name": "rockbot",
-            "email": "raquel@rckbt.me"
+            "name": "rockbot"
         },
         {
-            "name": "soldair",
-            "email": "soldair@gmail.com"
+            "name": "soldair"
         }
     ],
     "name": "marky-markdown",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/npm/marky-markdown.git"
@@ -129,12 +127,12 @@
     "scripts": {
         "build": "rm -rf dist && mkdir dist && touch dist/marky-markdown.js && browserify index.js -i highlights -s markyMarkdown > dist/marky-markdown.js",
         "pretest": "npm run build",
-        "test": "standard-format -w && standard && mocha --timeout 8000"
+        "test": "standard --fix && mocha --timeout 8000"
     },
     "standard": {
         "ignore": "dist"
     },
-    "version": "9.0.2"
+    "version": "9.0.3"
 }
 ```
 
