@@ -1,4 +1,7 @@
-# test coverage for  [marky-markdown (v9.0.3)](https://github.com/npm/marky-markdown)  [![npm package](https://img.shields.io/npm/v/npmtest-marky-markdown.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-marky-markdown) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-marky-markdown.svg)](https://travis-ci.org/npmtest/node-npmtest-marky-markdown)
+# npmtest-marky-markdown
+
+#### basic test coverage for  [marky-markdown (v9.0.3)](https://github.com/npm/marky-markdown)  [![npm package](https://img.shields.io/npm/v/npmtest-marky-markdown.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-marky-markdown) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-marky-markdown.svg)](https://travis-ci.org/npmtest/node-npmtest-marky-markdown)
+
 #### npm's markdown parser
 
 [![NPM](https://nodei.co/npm/marky-markdown.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/marky-markdown)
