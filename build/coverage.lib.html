@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for node-npmtest-marky-markdown/node_modules/marky-markdown/lib/cleanup.js</title>
+    <title>Code coverage report for node-npmtest-marky-markdown/node_modules/marky-markdown/bin/marky-markdown.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,23 +194,23 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-marky-markdown">npmtest-marky-markdown (v0.0.2)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-marky-markdown/node_modules/marky-markdown/lib/cleanup.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-marky-markdown/node_modules/marky-markdown/bin/marky-markdown.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">75% <small>(9 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">58.33% <small>(7 / 12)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">100% <small>(0 / 0)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">25% <small>(1 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">50% <small>(2 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">0% <small>(0 / 1)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">81.82% <small>(9 / 11)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">63.64% <small>(7 / 11)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-marky-markdown/node_modules/marky-markdown/lib/</a> &#187; cleanup.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-marky-markdown/node_modules/marky-markdown/bin/</a> &#187; marky-markdown.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
@@ -232,68 +232,47 @@
 16
 17
 18
-19
-20
-21
-22
-23
-24
-25
-26</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+19</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">2</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">65</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var clean = require('property-ttl')
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">//#!/usr/bin/env node
+var fs = require('fs')
+var path = require('path')
+var marky = require('..')
 &nbsp;
-module.exports = function (grammars) {
-  var managed = 0
-&nbsp;
-  var stops = []
-&nbsp;
-  scan()
-&nbsp;
-  return <span class="fstat-no" title="function not covered" >function stopAll () {</span>
-<span class="cstat-no" title="statement not covered" >    while (stops.length) <span class="cstat-no" title="statement not covered" >stops.shift()()</span></span>
-  }
-&nbsp;
-  function scan () {
-    while (managed &lt; grammars.length - 1) {
-      stops.push(
-        clean(grammars[managed], 'repository', 2000, <span class="fstat-no" title="function not covered" >function () {</span>
-<span class="cstat-no" title="statement not covered" >          scan() </span>// start watching new grammars if they are added later.
-        }),
-        clean(grammars[managed++], 'initialRule', 2000)
-      )
-    }
-  }
+<span class="missing-if-branch" title="else path not taken" >E</span>if (process.argv.length &lt; 3) {
+  console.log('Usage:\n\nmarky-markdown some.md &gt; some.html')
+  process.exit()
 }
+&nbsp;
+var filePath = path.resolve(process.cwd(), process.argv[2])
+&nbsp;
+<span class="cstat-no" title="statement not covered" >fs.readFile(filePath, <span class="fstat-no" title="function not covered" >function (err, data) {</span></span>
+<span class="cstat-no" title="statement not covered" >  if (err) <span class="cstat-no" title="statement not covered" >throw err</span></span>
+<span class="cstat-no" title="statement not covered" >  var html = marky(data.toString())</span>
+<span class="cstat-no" title="statement not covered" >  process.stdout.write(html)</span>
+})
 &nbsp;
 &nbsp;</pre></td></tr>
 </table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 21:01:32 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Sat Apr 22 2017 07:46:37 GMT+0000 (UTC)</div>
 </div>
 </body>
 </html>
